@@ -1,0 +1,118 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#f8f4ee;
+    color:#333;
+    min-height:100vh;
+}
+
+/* Header */
+
+header{
+    background:white;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1{
+    color:#8b6f47;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#555;
+    font-size:16px;
+    line-height:1.6;
+}
+
+/* Search Section */
+
+.search-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:40px 20px;
+    gap:10px;
+}
+
+.search-section input{
+    width:350px;
+    padding:14px;
+    border:2px solid #d8c3a5;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    background:white;
+}
+
+.search-section button{
+    padding:14px 22px;
+    border:none;
+    background:#c8ad7f;
+    color:white;
+    font-size:16px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.search-section button:hover{
+    background:#a98b62;
+}
+
+/* Result Section */
+
+.result-container{
+    width:80%;
+    margin:0 auto 40px auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* Cards */
+
+.card{
+    background:white;
+    padding:25px;
+    border-left:8px solid #c8ad7f;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    color:#8b6f47;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:16px;
+    line-height:1.6;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .search-section{
+        flex-direction:column;
+    }
+
+    .search-section input{
+        width:100%;
+    }
+
+    .result-container{
+        width:90%;
+    }
+
+}
